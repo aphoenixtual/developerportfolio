@@ -1,4 +1,4 @@
-[![](https://raw.githubusercontent.com/aphoenixtual/aphoenixtual/master/aayush.gif)](https://www.aphoenixtual.com/)<!-- If you want the template for my gif, email me! -->
+[![](https://raw.githubusercontent.com/aphoenixtual/aphoenixtual/master/aayush.gif)](https://quirky-ptolemy-6ffaf7.netlify.app/)<!-- If you want the template for my gif, email me! -->
 
 <a href="https://www.linkedin.com/in/aayush-patel-ab76b3165/">
   <img align="left" alt="Aayush Patel | LinkedIn" width="40px" src="https://raw.githubusercontent.com/aphoenixtual/aphoenixtual/master/assets/social-linkedin-circle-512.webp" />
@@ -22,7 +22,7 @@
 <br />
 <br />
 
-Hey, I'm <a href = "https://aayush-patel.netlify.app/">Aayush Patel</a>. I'm passionate Competitive Programmer and currently working as a Software Engineer at <a href="https://www.tavant.com/">Tavant Technologies</a>👨‍💻. I have experience working as a Software Engineer in various domains like E-Commerce and Health-Care.
+Hey, I'm <a href = "https://quirky-ptolemy-6ffaf7.netlify.app/">Aayush Patel</a>. I'm passionate Competitive Programmer and currently working as a Software Engineer at <a href="https://www.tavant.com/">Tavant Technologies</a>👨‍💻. I have experience working as a Software Engineer in various domains like E-Commerce and Health-Care.
 <br />
 
 I am skilled in :- <br />
