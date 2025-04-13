@@ -23,6 +23,10 @@ jQuery(function($) {
 	stickyFillPlugin();
 	animateReveal();
 
+	document.getElementById('contactForm').addEventListener('submit', function () {
+    document.getElementById('status-message').innerText = "Sending message...";
+  });
+
 });
 
 var siteIstotope = function() {
