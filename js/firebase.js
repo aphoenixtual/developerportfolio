@@ -35,7 +35,7 @@ document.getElementById('contactForm').addEventListener('submit', function (e) {
     datetime: new Date().toString()
   }).then(() => {
     const statusEl = document.getElementById('status');
-    statusEl.innerHTML = `<p>Hey, <strong>${name}</strong>. <br>Thank you for connecting.<br>I will contact you soon.</p>`;
+    statusEl.innerHTML = `<p>Hey <strong>${name}</strong> <br>Thank you for connecting...<br>Catch you soon 😎</p>`;
     statusEl.classList.add("show");
     document.getElementById('contactForm').reset();
   }).catch(() => {
