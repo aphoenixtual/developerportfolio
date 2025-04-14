@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@600&display=swap');
 @import url("https://fonts.googleapis.com/css?family=Arimo:400|Raleway:300,400,700&display=swap");
 body {
   font-family: "Raleway", sans-serif;
@@ -2126,8 +2127,8 @@ span.error {
 }
 
  */
-@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@600&display=swap');
-
+/* @import url('https://fonts.googleapis.com/css2?family=Kanit:wght@600&display=swap');
+ */
 .animated-status-message {
   font-family: 'Kanit', sans-serif;
   font-size: 20px;
