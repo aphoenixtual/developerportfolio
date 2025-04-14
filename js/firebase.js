@@ -60,16 +60,16 @@ document.getElementById('contactForm').addEventListener('submit', function (e) {
     statusEl.style.color = "";
     document.getElementById('contactForm').reset();
 
-    // 🕐 Start vanish effect after 5 sec
+    // NEW: use Thanos snap instead
     setTimeout(() => {
-      statusEl.classList.add("vanish");
+    statusEl.classList.add("snap");
     }, 5000);
 
-    // 🧼 Fully remove it after animation ends
+    // Fully remove it after animation ends
     setTimeout(() => {
-      statusEl.classList.remove("show", "vanish");
-      statusEl.innerHTML = "";
-    }, 5600);
+    statusEl.classList.remove("show", "snap");
+    statusEl.innerHTML = "";
+    }, 6200);
   }).catch(() => {
     statusEl.innerText = "There is some issue!! Please try again.";
     statusEl.style.color = "red";
