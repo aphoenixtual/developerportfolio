@@ -2132,7 +2132,7 @@ span.error {
   font-family: 'Kanit', sans-serif;
   font-size: 20px;
   font-weight: 600;
-  color: #8B0000;
+  color: #FFFFF0;
   background-color: rgba(0, 0, 0, 0.7);
   padding: 16px 24px;
   border-radius: 12px;
@@ -2152,9 +2152,9 @@ span.error {
 
 @keyframes glowOnSlide {
   0% {
-    box-shadow: 0 0 5px #00ff88;
+    box-shadow: 0 0 5px #800000;
   }
   100% {
-    box-shadow: 0 0 20px #00ff88;
+    box-shadow: 0 0 20px #800000;
   }
 }
