@@ -1,4 +1,3 @@
-// firebase.js
 import { initializeApp } from "https://www.gstatic.com/firebasejs/11.6.0/firebase-app.js";
 import { getDatabase, ref, push, set } from "https://www.gstatic.com/firebasejs/11.6.0/firebase-database.js";
 
@@ -21,10 +20,33 @@ const database = getDatabase(app);
 document.getElementById('contactForm').addEventListener('submit', function (e) {
   e.preventDefault();
 
-  const name = document.getElementById('name').value;
-  const email = document.getElementById('email').value;
-  const message = document.getElementById('message').value;
+  const name = document.getElementById('name').value.trim();
+  const email = document.getElementById('email').value.trim();
+  const message = document.getElementById('message').value.trim();
+  const statusEl = document.getElementById('status');
 
+  const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+  // Basic Validation
+  if (!name) {
+    statusEl.innerText = "Name is required.";
+    statusEl.style.color = "red";
+    return;
+  }
+
+  if (!emailPattern.test(email)) {
+    statusEl.innerText = "Please enter a valid email address.";
+    statusEl.style.color = "red";
+    return;
+  }
+
+  if (!message) {
+    statusEl.innerText = "Message cannot be empty.";
+    statusEl.style.color = "red";
+    return;
+  }
+
+  // All good? Save to Firebase
   const messagesRef = ref(database, 'ContactDetails/');
   const newMessageRef = push(messagesRef);
 
@@ -34,13 +56,12 @@ document.getElementById('contactForm').addEventListener('submit', function (e) {
     message: message,
     datetime: new Date().toString()
   }).then(() => {
-    const statusEl = document.getElementById('status');
     statusEl.innerHTML = `<p>Hey <strong>${name}</strong> <br>Thank you for connecting...<br>Catch you soon 😎</p>`;
     statusEl.classList.add("show");
+    statusEl.style.color = "";
     document.getElementById('contactForm').reset();
   }).catch(() => {
-    const statusEl = document.getElementById('status');
-    statusEl.innerText = "There is some issue!! Please Try again";
+    statusEl.innerText = "There is some issue!! Please try again.";
     statusEl.style.color = "red";
   });
 });
