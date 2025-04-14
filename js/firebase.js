@@ -2,7 +2,7 @@
 import { initializeApp } from "https://www.gstatic.com/firebasejs/11.6.0/firebase-app.js";
 import { getDatabase, ref, push, set } from "https://www.gstatic.com/firebasejs/11.6.0/firebase-database.js";
 
-// Tera config
+// Your Firebase config
 const firebaseConfig = {
   apiKey: "AIzaSyAdsT5uy07GzLjswxhP6SvH_qT5OCFXjRU",
   authDomain: "contactformwebsite-b2c9d.firebaseapp.com",
@@ -17,7 +17,7 @@ const firebaseConfig = {
 const app = initializeApp(firebaseConfig);
 const database = getDatabase(app);
 
-// 👇 contact form logic
+// Handle form submission
 document.getElementById('contactForm').addEventListener('submit', function (e) {
   e.preventDefault();
 
@@ -34,12 +34,13 @@ document.getElementById('contactForm').addEventListener('submit', function (e) {
     message: message,
     datetime: new Date().toString()
   }).then(() => {
-    document.getElementById('status').innerHTML =
-      `<p style='font-size:18px; font-weight:500;'> Hello, ${name}. Thank you for contacting me. <br> I will contact you soon. </p>`;
-    document.getElementById('status').style.color = "green";
+    const statusEl = document.getElementById('status');
+    statusEl.innerHTML = `<p>Hello, <strong>${name}</strong>. Thank you for contacting me.<br>I will contact you soon.</p>`;
+    statusEl.classList.add("show");
     document.getElementById('contactForm').reset();
   }).catch(() => {
-    document.getElementById('status').innerText = "There is some issue!! Please Try again";
-    document.getElementById('status').style.color = "red";
+    const statusEl = document.getElementById('status');
+    statusEl.innerText = "There is some issue!! Please Try again";
+    statusEl.style.color = "red";
   });
 });
