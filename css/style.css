@@ -2159,3 +2159,21 @@ span.error {
     box-shadow: 0 0 20px #800000;
   }
 }
+
+
+
+@keyframes vanishEffect {
+  0% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  100% {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+}
+
+.animated-status-message.vanish {
+  animation: vanishEffect 0.5s ease-in-out forwards;
+}
+
