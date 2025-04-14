@@ -10,6 +10,7 @@ const firebaseConfig = {
   storageBucket: "contactformwebsite-b2c9d.firebasestorage.app",
   messagingSenderId: "701514212296",
   appId: "1:701514212296:web:f4842686530bfea0c056fd"
+  databaseURL: "https://contactformwebsite-b2c9d-default-rtdb.firebaseio.com"
 };
 
 // Initialize Firebase
