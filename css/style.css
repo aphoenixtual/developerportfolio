@@ -2097,7 +2097,7 @@ span.error {
 }
 
 
-.animated-status-message {
+/* .animated-status-message {
   font-size: 18px;
   font-weight: 600;
   text-align: center;
@@ -2125,3 +2125,36 @@ span.error {
   }
 }
 
+ */
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@600&display=swap');
+
+.animated-status-message {
+  font-family: 'Kanit', sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  color: #00ff88;
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 16px 24px;
+  border-radius: 12px;
+  text-align: center;
+  max-width: 500px;
+  margin: 40px auto 0;
+  opacity: 0;
+  transform: translateX(100%);
+  transition: all 0.7s ease-out;
+}
+
+.animated-status-message.show {
+  opacity: 1;
+  transform: translateX(0);
+  animation: glowOnSlide 2s ease-in-out infinite alternate;
+}
+
+@keyframes glowOnSlide {
+  0% {
+    box-shadow: 0 0 5px #00ff88;
+  }
+  100% {
+    box-shadow: 0 0 20px #00ff88;
+  }
+}
