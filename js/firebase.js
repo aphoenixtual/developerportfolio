@@ -1,12 +1,11 @@
 var firebaseConfig = {
-    apiKey: "AIzaSyDzUL6l9ceuncsrxVDBrlfjWGZH2kbGFGs",
-    authDomain: "contact-info-1eaa5.firebaseapp.com",
-    projectId: "contact-info-1eaa5",
-    storageBucket: "contact-info-1eaa5.appspot.com",
-    messagingSenderId: "609146899166",
-    appId: "1:609146899166:web:054e0258bb7d072697504f",
-    measurementId: "G-RK5XPMTGLL"
-};
+    apiKey: "AIzaSyAdsT5uy07GzLjswxhP6SvH_qT5OCFXjRU",
+    authDomain: "contactformwebsite-b2c9d.firebaseapp.com",
+    projectId: "contactformwebsite-b2c9d",
+    storageBucket: "contactformwebsite-b2c9d.firebasestorage.app",
+    messagingSenderId: "701514212296",
+    appId: "1:701514212296:web:f4842686530bfea0c056fd"
+  };
 
 
 firebase.initializeApp(firebaseConfig);
